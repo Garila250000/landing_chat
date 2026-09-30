@@ -1,0 +1,14 @@
+type User{
+    name: String! 
+    apperasIn: [Episode!]!
+} 
+
+
+query UserFriends{
+    user{
+        name 
+        friends{
+            name
+        }
+    }
+}
